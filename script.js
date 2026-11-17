@@ -11,10 +11,10 @@ let studentStatus = (registered) => (registered === "true");
 let department = "Computer Science";
 
 let scores = [
-    {subject: "html", score: 67},
-    {subject: "css", score: 91},
-    {subject: "javaScript", score: 73}
-    ]
+    { subject: "html", score: 67 },
+    { subject: "css", score: 91 },
+    { subject: "javaScript", score: 73 }
+];
 
 let totalFee = 175000;
 let feePaid = 65000;
@@ -24,7 +24,6 @@ let totalDays = 40;
 let attendedDays = 33;
 let attendancePercentage = (attendedDays / totalDays) * 100;
 
-
 console.log(studentFullName);
 console.log(studentAge);
 console.log(studentStatus(registered));
@@ -32,12 +31,10 @@ console.log(department);
 console.log(scores);
 console.log(attendancePercentage + "%");
 console.log(outstandingFee);
-console.log(names);
-console.log(names);
-console.log(`age`);
 
-// scores.forEach(function(Item) {
-// console.log(Item.subject + ":" + Item.score);});
+scores.forEach(function (Item) {
+    console.log(Item.subject + ": " + Item.score);
+});
 
 // Task B: Data Type Investigation (8 marks)
 
@@ -74,7 +71,7 @@ console.log(effect);
 
 // Task D: Examination Eligibility (8 marks)
 
-console.log(age >= 18);
+console.log(result >= 18);
 console.log(studentStatus(registered) == true);
 console.log(feePaid <= totalFee);
 console.log(attendancePercentage >= 75);
